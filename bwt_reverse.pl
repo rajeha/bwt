@@ -4,7 +4,7 @@ use warnings;
 
 sub reverse_bwt {
 	my $str = shift @_;
-	my $idx = index $str,"[";
+	my $idx = index $str, "[";
 	$str =~ tr/[]//d;
 	my @chars = split//, $str;
 	my @sorted = sort {$chars[$a] cmp $chars[$b]} 0..$#chars;
