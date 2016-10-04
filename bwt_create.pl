@@ -10,7 +10,6 @@ sub bwt {
 	join "", map {$_--?"$chars[$_]":"[$chars[$_]]"} @suff;
 }
 
-
 while (<>) {
 	chomp;
 	print bwt($_), "\n";
